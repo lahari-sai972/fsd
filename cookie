@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
         `);
     } else {
         req.session.views = 1;
-        res.send(<h2>Hello! This is your first visit.</h2>);
+        res.send(`<h2>Hello! This is your first visit.</h2>`);
     }
 });
 
