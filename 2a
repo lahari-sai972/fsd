@@ -1,0 +1,23 @@
+import React, { useState } from "react";
+
+function App() {
+  const [show, setShow] = useState(true);
+
+  return (
+    <div style={{ fontFamily: "system-ui" }}>
+      <h2>React Conditional Rendering</h2>
+
+      {/* Conditional Rendering */}
+      {show ? <p>Hello, welcome to React!</p> : null}
+
+      <button onClick={() => setShow(!show)}>
+        {show ? "Hide Message" : "Show Message"}
+      </button>
+    </div>
+  );
+}
+
+export default App;
+//npx create-react-app myreactapp
+//cd myreactapp
+//npm start
